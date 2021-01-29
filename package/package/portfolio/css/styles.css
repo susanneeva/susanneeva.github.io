@@ -1,0 +1,147 @@
+body {
+  font-family: 'Barlow', sans-serif;
+  margin: 0;
+  padding: 0;
+  font-size: 15px:
+}
+nav {
+  background-color: #DBEBF4;
+  position: fixed;
+  z-index: 1;
+  width: 100%;
+  font-size: 14px;
+}
+li.empty {
+  width: 80px;
+  border-top: 1px solid black;
+  top: -5px;
+  position: relative;
+}
+nav ul li {
+  display: inline-block;
+  margin: 0 15px; /* The 0 refers to top/bottom and
+                     15 refers to left/right */
+  padding: 0;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  font-size: 14px;
+}
+nav ul {
+  margin: 0 auto;
+  text-align: center;
+  padding: 30px;
+}
+nav li a {
+  text-decoration: none;
+  color: black;
+}
+nav li a:hover {
+  text-decoration: underline;
+}
+header {
+  top: 70px;
+  position: relative;
+  margin-bottom: 220px;
+  background-image: url("../img/background.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-y: -145px;
+}
+img {
+  /* This is limiting the width of the image,
+  so it takes 100% of the parent maximum. */
+  max-width: 100%;
+}
+figcaption {
+  font-size: 10px;
+  margin-top: 10px;
+}
+ul li {
+  list-style: none;
+  margin: 10px 0;
+}
+ul li a {
+  text-decoration: underline;
+  color: black;
+}
+h1, h2, .second-skills-list {
+  font-family: 'Inknut Antiqua', serif;
+}
+h1 {
+  font-size: 80px;
+  line-height: 130%;
+}
+h2 {
+  font-size: 30px;
+  line-height: 130%;
+}
+h1, h2 {
+  font-weight: normal;
+}
+p {
+  font-size: 15px;
+  line-height: 150%;
+}
+footer {
+  text-align: center;
+  margin-top: 100px;
+  margin-bottom: 20px;
+}
+footer h2 {
+  font-size: 40px;
+  margin-bottom: 120px;
+}
+
+/* classes */
+.button {
+  border: 1px solid black;
+  text-decoration: none;
+  color: black;
+  padding: 10px 30px;
+  margin-top: 25px;
+  display: inline-block;
+  border-radius: 20px;
+  transition: background 0.3s ease-in-out, color;
+}
+.button:hover {
+  background-color: black;
+  color: white;
+}
+.intro-img {
+  box-shadow: 1px 2px 30px rgba(0,0,0,0.2);
+  margin-top: 30px;
+}
+.second-skills-list {
+  text-align: center;
+  font-size: 38px;
+  line-height: 150%;
+  margin-bottom: 140px;
+}
+.project-1 {
+    background-color: #DBEBF4;
+    background-size: cover;
+    margin: 55px 0px;
+    padding: 50px;
+}
+.project-2 {
+    margin: 45px 0px;
+    padding: 35px;
+}
+.project-3 {
+    background-color: #DBEBF4;
+    background-size: cover;
+    margin: 45px 0px;
+    padding: 45px;
+}
+.project-1 .button {
+  margin-top: 5px;
+}
+.project-2 .button {
+  margin-top: 5px;
+}
+.project-3 .button {
+  margin-top: 5px;
+}
+.right-alignment {
+  text-align: right;
+}
