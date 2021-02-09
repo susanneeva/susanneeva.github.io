@@ -1,0 +1,54 @@
+body {
+  font-family: 'Barlow', sans-serif;
+  margin: 0;
+  padding: 0;
+  font-size: 15px;
+}
+nav {
+  background-color: #DBEBF4;
+  position: fixed;
+  z-index: 1;
+  width: 100%;
+  font-size: 14px;
+}
+li.empty {
+  width: 80px;
+  border-top: 1px solid black;
+  top: -5px;
+  position: relative;
+}
+nav ul li {
+  display: inline-block;
+  margin: 0 15px; /* The 0 refers to top/bottom and
+                     15 refers to left/right */
+  padding: 0;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  font-size: 14px;
+}
+nav ul {
+  margin: 0 auto;
+  text-align: center;
+  padding: 30px;
+}
+nav li a {
+  text-decoration: none;
+  color: black;
+}
+nav li a:hover {
+  text-decoration: underline;
+}
+header {
+  top: 70px;
+  position: relative;
+  margin-bottom: 220px;
+  background-image: url("../img/background.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-y: -145px;
+}
+img {
+  /* This is limiting the width of the image,
+  so it takes 100% of the parent maximum. */
+  max-width: 100%;
+}
