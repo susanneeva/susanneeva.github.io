@@ -2,11 +2,13 @@ body {
   font-family: 'Barlow', sans-serif;
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
   font-size: 15px;
 }
 nav {
   background-color: #DBEBF4;
   position: fixed;
+  top: 0;
   z-index: 1;
   width: 100%;
   font-size: 14px;
@@ -27,7 +29,7 @@ nav ul li {
   font-size: 14px;
 }
 nav ul {
-  margin: 0 auto;
+  margin: 0;
   text-align: center;
   padding: 30px;
 }
@@ -39,9 +41,9 @@ nav li a:hover {
   text-decoration: underline;
 }
 header {
-  top: 70px;
+  top: 27px;
   position: relative;
-  margin-bottom: 220px;
+  margin-bottom: 80px;
   background-image: url("../img/background.png");
   background-repeat: no-repeat;
   background-size: cover;
@@ -51,4 +53,124 @@ img {
   /* This is limiting the width of the image,
   so it takes 100% of the parent maximum. */
   max-width: 100%;
+}
+h1 {
+  font-family: 'Inknut Antiqua', serif;
+  font-size: 50px;
+  margin-top: 50px;
+  text-align: center;
+  font-weight: normal;
+}
+
+h2 {
+  font-family: 'Inknut Antiqua', serif;
+  margin: 2px;
+  font-size: 28px;
+}
+
+.video {
+  border: none;
+}
+
+.container {
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 100px 0;
+  background-color: #DBDEF4;
+}
+.timeline {
+  width: 80%;
+  height: auto;
+  max-width: 800px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.timeline ul {
+  list-style: none;
+}
+.timeline ul li {
+  padding: 20px;
+  background-color: #E9EBF8;
+  color: black;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+.timeline ul li:last-child {
+  margin-bottom: 0;
+}
+.timeline-content h1 {
+  font-weight: 500;
+  font-size: 25px;
+  line-height: 30px;
+  margin-bottom: 10px;
+}
+.timeline-content p {
+  font-size: 14px;
+  line-height: 23px;
+  font-weight: normal;
+}
+.timeline-content .date {
+  font-size: 12px;
+  font-weight: 300;
+  margin-bottom: 10px;
+  letter-spacing: 2px;
+  color: black;
+}
+@media only screen and (min-width: 768px) {
+  .timeline:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 2px;
+    height: 100%;
+    background-color: gray;
+  }
+  .timeline ul li {
+    width: 50%;
+    position: relative;
+    margin-bottom: 50px;
+  }
+  .timeline ul li:nth-child(odd) {
+    float: left;
+    clear: right;
+    transform: translateX(-30px);
+    border-radius: 20px 0px 20px 20px;
+  }
+  .timeline ul li:nth-child(even) {
+    float: right;
+    clear: left;
+    transform: translateX(30px);
+    border-radius: 0px 20px 20px 20px;
+  }
+  .timeline ul li::before {
+    content: "";
+    position: absolute;
+    height: 20px;
+    width: 20px;
+    left: 370px;
+    border-radius: 50%;
+    background-color: black;
+    top: 0px;
+  }
+  .timeline ul li:nth-child(odd)::before {
+    transform: translate(50%, -50%);
+    right: -30px;
+  }
+  .timeline ul li:nth-child(even)::before {
+    transform: translate(-50%, -50%);
+    left: -50px;
+  }
+  .timeline-content .date {
+    position: absolute;
+    top: -30px;
+  }
+  .timeline ul li:hover::before {
+    background-color: white;
+  }
 }
